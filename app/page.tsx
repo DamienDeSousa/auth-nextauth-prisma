@@ -14,9 +14,7 @@ export default function Home() {
       {status === "authenticated" ? (
         <Button onClick={() => signOut()}>Logout</Button>
       ) : (
-        <Button onClick={() => router.push("/api/auth/signin/credentials")}>
-          login
-        </Button>
+        <Button onClick={() => router.push("/login")}>login</Button>
       )}
     </div>
   );
